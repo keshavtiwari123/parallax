@@ -1,0 +1,78 @@
+<!DOCTYPE html>
+<html>
+<head>
+	<style>
+		body{background-color:black}
+		#div1{
+			position: absolute;
+			top: 50%;
+			left: 20%;
+			height: 200px;
+			width: 200px;
+			background-color: white;
+			border-radius: 50%;
+			display: grid;
+			place-items: center;
+			font-weight: bold;
+		}
+		#div3{
+			position: absolute;
+			top: 70%;
+			left: 40%;
+			border-radius: 50%;
+			height: 200px;
+			width: 200px;
+			background-color: white;
+			display: grid;
+			place-items: center;
+			font-weight: bold;
+		}
+		#div4{
+			position: absolute;
+			top: 90%;
+			left: 60%;
+			height: 200px;
+			width: 200px;
+			background-color: white;
+			border-radius: 50%;
+			display: grid;
+			place-items: center;
+			font-weight: bold;
+		}
+		#div5{
+			position: absolute;
+			top: 100%;
+			left: 80%;
+			height: 200px;
+			width: 200px;
+			background-color: white;
+			border-radius: 50%;
+			display: grid;
+			place-items: center;
+			font-weight: bold;
+		}
+		#div2{
+			height: 1500px;
+			width: 100px;
+			color: white;
+			font-size: 50px;
+			background-color: rgba(0, 0, 0, .5);
+		}
+	</style>
+</head>
+<body>
+	<div id='div1'>$('#div1').parallax_scroll(0.1);</div>
+	<div id='div2'>Now, this scroll speed is just n0rmL, to demonstrate the normal speed of scroll.</div>
+	<div id='div3'>$('#div2').parallax_scroll(0.5);</div>
+	<div id='div4'>$('#div3').parallax_scroll(0.9);</div>
+	<div id='div5'>$('#div4').parallax_scroll(2);</div>
+<script type='text/javascript' src='https://code.jquery.com/jquery-3.3.1.min.js'></script>
+<script type='text/javascript' src='parallax_plugin.js'></script>
+<script type='text/javascript'>
+	$('#div1').parallax_scroll(.1);
+	$('#div3').parallax_scroll(.5);
+	$('#div4').parallax_scroll(.9);
+	$('#div5').parallax_scroll(2);
+</script>
+</body>
+</html>
